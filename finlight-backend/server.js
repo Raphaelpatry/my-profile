@@ -86,4 +86,4 @@ app.post('/api/analyze', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`ClairFacture backend démarré sur http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Finlight backend démarré sur http://localhost:${PORT}`));

@@ -1,12 +1,12 @@
-# ClairFacture — backend
+# Finlight — backend
 
 Petit serveur qui garde la clé API Anthropic côté serveur, pour que
-`clairfacture_mvp.html` n'ait jamais besoin de l'exposer dans le navigateur.
+`finlight_mvp.html` n'ait jamais besoin de l'exposer dans le navigateur.
 
 ## Démarrage
 
 ```bash
-cd clairfacture-backend
+cd finlight-backend
 npm install
 cp .env.example .env   # puis renseigner ANTHROPIC_API_KEY dans .env
 npm start
@@ -16,7 +16,7 @@ Le serveur écoute par défaut sur `http://localhost:3001`.
 
 ## Utilisation avec le frontend
 
-`clairfacture_mvp.html` envoie les factures à `http://localhost:3001/api/analyze`.
+`finlight_mvp.html` envoie les factures à `http://localhost:3001/api/analyze`.
 Démarrez le backend avant de cliquer sur « Analyser la facture » dans la page.
 
 ## Sécurité

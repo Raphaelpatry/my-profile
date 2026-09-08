@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ClairFacture — Assistant de réclamation</title>
+<title>Finlight — Assistant de réclamation</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap');
 
@@ -277,7 +277,7 @@
       <span>ASSISTANT DE RÉCLAMATION — PROTOTYPE</span>
       <span id="dateNow"></span>
     </div>
-    <h1 class="brand">ClairFacture</h1>
+    <h1 class="brand">Finlight</h1>
     <p class="tagline">Une facture qui cloche ? On la lit pour vous, et on rédige la lettre.</p>
   </header>
 
@@ -335,7 +335,7 @@
   </div>
 
   <div class="disclaimer">
-    Prototype à but de validation. ClairFacture génère un document standardisé à partir de règles objectives et ne
+    Prototype à but de validation. Finlight génère un document standardisé à partir de règles objectives et ne
     constitue pas un conseil juridique personnalisé — relisez toujours la lettre avant envoi et, en cas de litige
     important, rapprochez-vous d'un professionnel du droit ou du médiateur compétent. Les documents ne sont pas
     conservés après cette session.
@@ -456,7 +456,7 @@ async function analyze() {
     renderResults(result);
   } catch (err) {
     errorRow.style.display = 'block';
-    errorRow.textContent = "Impossible d'analyser ce document pour le moment (" + err.message + "). Vérifiez que le serveur ClairFacture (dossier clairfacture-backend) est bien démarré, ou réessayez avec un fichier plus net.";
+    errorRow.textContent = "Impossible d'analyser ce document pour le moment (" + err.message + "). Vérifiez que le serveur Finlight (dossier finlight-backend) est bien démarré, ou réessayez avec un fichier plus net.";
   } finally {
     loadingRow.style.display = 'none';
     analyzeBtn.disabled = false;
