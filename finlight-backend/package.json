@@ -1,8 +1,8 @@
 {
-  "name": "clairfacture-backend",
+  "name": "finlight-backend",
   "version": "1.0.0",
   "private": true,
-  "description": "Petit backend proxy pour ClairFacture : garde la clé API Anthropic côté serveur au lieu de l'exposer dans le navigateur.",
+  "description": "Petit backend proxy pour Finlight : garde la clé API Anthropic côté serveur au lieu de l'exposer dans le navigateur.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
